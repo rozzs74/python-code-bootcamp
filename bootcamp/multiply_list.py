@@ -4,10 +4,12 @@
 
 mylist = [1, 2, 3, -5]
 
-def multiply_list(lists): 
-    total = 1
-    for item in lists:
-        total *= item
-    return total
+
+def multiply_list(lists):
+	total = 1
+	for item in lists:
+		total *= item
+	return total
+
 
 print(multiply_list(mylist))

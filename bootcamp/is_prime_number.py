@@ -1,6 +1,6 @@
 from math import sqrt
 
-# # Solution 1 easy and simple beginner level 
+# # Solution 1 easy and simple beginner level
 # def is_prime_or_composite_number(number):
 #     # Prime numbers are those not factorable
 #     # Composite are factorable
@@ -11,8 +11,8 @@ from math import sqrt
 #     else:
 #         print("It's prime number {}".format(number))
 
-
 # Solution 2 hard and better expert level
+
 
 def is_prime_or_composite_number2(number):
     if number % 2 == 0 and number > 2:
@@ -21,5 +21,6 @@ def is_prime_or_composite_number2(number):
         if number % i == 0:
             return False
     return True
+
 
 print(is_prime_or_composite_number2(1))
