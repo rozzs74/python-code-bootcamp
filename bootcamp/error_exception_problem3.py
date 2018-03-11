@@ -8,12 +8,12 @@ def ask():
     while True:
         try:
             number = int(input("Please enter number: "))
-            number ** 2
+            result = number ** 2
         except ValueError:
             print("Invalid number")
             continue
         else:
-            print(f"No errors here is the result {number}")
+            print(f"No errors here is the result {result}")
             break
         finally:
             print("Once done I am printing always")
