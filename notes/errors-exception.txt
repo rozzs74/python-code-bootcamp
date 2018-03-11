@@ -1,0 +1,33 @@
+---> Errors are bound to happen in your code! Take note that
+"NOBODY'S PERFECT"
+---> Especially when someone else ends up using it in expected way
+---> We can use error handling to attempt to plan for possible errors that may arise in the future
+---> Actually if theres is any type of error in your code, the entire script will stop.
+---> We can use Erro Handling to let the script continue with other code, even if there is an error.
+---> We can use assiociated block of code to handle it by three keywords:
+1) try - this is the block of code to be attempted (may lead to an error)
+2.) except - Block of code will execute in case there is an error in try block
+3.) finally - A final block of code that is always running, regardless of an error (if error exception is occuring or not)
+
+Example case
+def add(n1,n2):
+    try:
+        print(n1 + n2)
+    except:
+        print("Invalid")
+    else:
+        print("Add went well")
+
+def ask_for_int():
+    while True:
+        try:
+            result = int(input("Please provide number: "))
+        except:
+            print("Whoops that is not number")
+            continue
+        else:
+            print("Yes thank you")
+            break
+        finally:
+            print("End of try/except/finally")
+            print("I will always run at the end")

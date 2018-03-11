@@ -1,0 +1,161 @@
+---> The class is a blueprint that defines the nature of a future object.
+---> From classes we can construct instances. An instance is a specific object created from a particular class. 
+---> For example, above we created the object <code>lst</code> which was an instance of a list object. 
+---> Attributes is a characteristic of an object. Then a method is an operation that we can
+perform with the object.
+---> Methods are essential functions that performs operations sometimes it utilize the actual attributes.
+---> What is difference between "methods" and "functions" basically method is a function that is inside of class that will
+actually work with the object in some way. While function is a mini program that is inside of program the major purpose of function is to
+group your code and in general it avoids duplacting your code we can call it as deduplicating code.
+---> Attributes takes the argument in the special method and assign it to self.attribute_name
+---> In additional you can create another class attribute without adding another argument to init instead reuse the current argument by referrencing value
+---> __init__(self, <attributes>) = this is a special method in class and called upon quickly after creating instance of class. In starts with 
+"self" keyword  which connects to a method or object to instance of class. You can change it to any word but suggest to use "self" as readability.
+---> "self" always referrence to particular object or instance of class
+In summary a class is consists of ff:
+1.) The class itself
+2.) Construct instances of class
+3.) Define characteristics of each instance using attributes.
+4.) Create methods of class that performs operations.
+5.) Class object attributes(Circle.pi or self.attribute_name), this is the same for any instance of a class
+
+Example:
+
+class Dog():
+    species = 'mammal' # This is true regardless of creating instace  that is why its object attributes
+    def __init__(self, mybreed, name, spots):
+        self.breed = mybreed
+        self.name  = name
+        self.spots = spots
+    
+    def bark(self, number):
+        print("WOOF My name is ! {} the number is {} ".format(self.name, number))
+
+    def get_name(self):
+        return self.name
+    
+
+    
+
+lab = Dog(mybreed="Labrador", name="Lab", spots=True)
+lab.get_name
+
+lab.breed # labrador
+lab.bark(number=2) # WOOF My name is ! Lab the number is 2
+
+
+
+# Inheritance and Polymorphism
+Inheritance
+1.) Reusecode 
+2.) Inherits base class that is deriving to a class
+Example of Inheritance
+
+class Animal():
+    def __init__(self):
+        print("ANIMAL CREATED")
+    
+    def who_am_i(self):
+        print("I am an animal")
+    
+    def eat(self):
+        print("I am eating")
+
+class Dog(Animal): # Inherit the base animal class
+    def __init__(self):
+        Animal.__init__(self) # Create instance of class from base class
+        print("Dog created")
+    def eat(self):
+        print("I am a dog and eating")
+    def bark(self):
+        print("WOOF!")
+    
+dog = Dog()
+dog.who_am_i() # I am an animal
+dog.eat() # I am eating
+dog.bark() # WOOF
+
+Polymorphism
+1.) Refers to the way in which different object classes can share the same method name and then
+those methods can be called from the same place even though a variety of different objects
+2.) Common practice is the use of abstract classes and inheritance and what an abstract classes is one that never instantiaed
+In short abstract class will only work if you extend or inherit the base class to child sub class. Basically if you create 
+a instance of an object of the base class and invoking a particular method of that instance its invalid or not following
+the rule of being abstact class. If you want to work as expected you need to extend the parent class to child class
+
+Example of Basic example of Polymorphism
+class Dog():
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        return self.name + " says woof!"
+
+class Cat():
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        return self.name + " says meow!"
+
+niko = Dog("niko")
+felix = Cat("felix")
+niko.speak() # niko says woof!
+felix.speak() # felix says meow!
+
+for pet_class in [niko, felix]:
+    print(pet_class.speak()) # niko says woof!, felix says meow!
+
+def pet_speak(pet):
+    print(pet.speak())
+    
+pet_speak(niko) # niko says woof! 
+pet_speak(felix) # felix says meow!
+
+class Animal():
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        raise NotImplementedError("Subclass must implement this abstract method")
+
+
+OOP Python special methods
+-Special methods allows us to use some built in operations in Python
+
+class Book():
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author= author
+        self.pages = pages
+        
+    def __str__(self): # Referrence to print() and str()
+        return f"{self.title} by {self.author}"
+    
+    def __len__(self): # Referrence to len()
+        return self.pages
+    
+    def __del__(self): # Referrence to del
+        print("A book object has been deleted")
+
+Others
+Introduction to CS OOP of Python
+---> Objects are data in Python
+---> Python supports many different kinds of data
+---> Each is an object and every object has type
+a.) a type
+b.) An internal data representation (primitive or composite)
+c.) a set of procedures interaction with the object
+---> An object is an instance of type
+a.) 1234 is an instance of int
+b.) "hello" is an intance of string
+---> Everything in Python is an object and has a type
+---> can create new objects of some type. You can create many as you want
+---> can manipulate the objects. After creating them you can manipulate that.
+---> can destroy objects using (del <object>) after manipulatating you can delete if you don't need anymore
+1.) Explicitly using "del" or just "forget" about them
+2.) Python system will reclaim destroyed or inaccessible objects called "garbage collection"
+--> Objects are a data abstraction that captures
+1.) An internal representation through data attributes
+2.) An interface for interacting with object through methods (aka procedures / functions ) and defines behaviors but hides the 
+implementation

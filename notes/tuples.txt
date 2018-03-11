@@ -1,0 +1,12 @@
+--> Tuples are very similar to lists. However they one key difference - "Immutability"
+--> Once an element is inside a tuple, it can not be reassigned
+--> Tuples use parenthes (1,2,3)
+Common built in functions for Tuples
+count(<tuple_item>) - return how many count of the item inside tuple
+index(<tuple_item>) - return the index position value from tuple    
+
+tuple unpacking in for loop
+mylists = [(1,2), (3,4), (5,6), (7,8)]
+for (a,b) in mylists:
+    print(a)
+    print(b)

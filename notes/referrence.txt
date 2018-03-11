@@ -1,0 +1,7 @@
+Basic practice --> codingbat.com then select python
+More mathematical and harder practice --> https://projecteuler.net/archives
+List of Practice problems --> http://www.codeabbey.com/index/task_list
+Daily practice problrems --> https://www.reddit.com/r/dailyprogrammer
+Very tricky  website very few hints and touch problems not for noob - http://www.pythonchallenge.com
+
+https://the-python-challenge-solutions.hackingnote.com/ solutions 

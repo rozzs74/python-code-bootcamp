@@ -1,0 +1,6 @@
+--> Booleans are operators that allow you to convey True or False statements.
+--> These are very important later on the when we deal with control flow and logic.
+Boolean values are consists of two one is truthy and another is falsy
+True
+False
+Basically boolean is capitalize because the data type is named after mathematician George Boole

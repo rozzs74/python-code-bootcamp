@@ -1,0 +1,8 @@
+In Python we have 6 comparison operators and we can chain it these are
+
+==  is
+!=  is not
+>
+<
+>=
+<=

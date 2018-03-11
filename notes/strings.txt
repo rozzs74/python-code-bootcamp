@@ -1,0 +1,18 @@
+Strings are ordered sequence of characters
+Slicing allows you to grab a subsection of multiple characters a slice of the stirng
+string is IMMUTABLE
+This has the following sysntax
+[start:stop:step]
+start - is a numerical index for the slice
+stop - is the index you will go up to but not include
+step - is the size of the jump you take
+
+STRINGS ARE IMMUTABLE In Python
+String concatenation + 
+String multiplication *
+
+Floating formatting follows = {value:width.precision f}
+
+RESOURCES:
+Awesome source for print formatting
+--> https://pyformat.info/

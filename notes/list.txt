@@ -1,0 +1,36 @@
+--> Lists are ordered sequences that can hold varierty of object types(string, integer, list, float, dictionaries, set, tuples);
+--> List use bracket
+--> Lists are mutable
+--> mylist = [0,1,2]
+--> Common built in functions for lists
+append(<item>) - add new item  in the last element of List
+pop(<index_position>) - remove item on the list if w/ index position it will remove the value base on parameter. By default -1 is the parameter of pop().
+reverse() - reverse items in the Lists
+sort() - sort items in the list from ascending to descending
+
+OTHER
+type() - evaluate and return data type of particular value
+
+List comprehensions
+    --> are a unique way of quickly creating list with Python
+    example
+
+    words = 'Hello'
+    my_list = []
+
+    for letter in words:
+        my_list.append(letter)
+    
+    print(my_list) # ['H', 'e', 'l','l','o']
+
+using List comprehensions
+my_list = [letter for letter in words] #flattened for looop
+print(my_list) # ['H', 'e', 'l','l','o']
+
+mylist = [x**2 for x in range(0,11) if x%2 ==0]
+print(my_list) # [0,4,16,36,64,100]
+
+celcius = [0,10,20,34.5]
+fahrenheit = [((9/5) * temp + 32) for temp in celcius]
+print(fahrenheit) # [32.0, 50.0, 68.0, 94.1]
+--> Advantage on using list comprehensions such flatten is one liner but disadvantage is readability

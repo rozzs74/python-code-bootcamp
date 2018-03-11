@@ -1,0 +1,5 @@
+--> Sets are unordered collections of unique elements. Meaning there can  only be one representative of the same object.
+--> Sets doesn't not support indexing.
+--> to create set invoke the function set()
+Common built in functions
+add(<set_value>) - append new item inside the set.

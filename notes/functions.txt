@@ -1,0 +1,90 @@
+Functions
+--> allow us to create blocks of code that can be easily executed many times, wihout
+    needing to constantly rewrite the entire block of code
+--> Syntax
+    def <function_name>:
+        ''' 
+        <DOC STRING>
+        '''
+        <block of code>
+--> Function can have parameters / arguments by assigning them into ()
+--> Function can return value
+
+--> Example
+def say_hello(name='NAME'): #Deafult 
+    print("hello " + name)
+say_hello()
+
+
+Functional parameters *args and **kwargs
+--> It stands of arguments and keywordargument
+--> *args allows to set the arbitrary number of arguments and it is treated as tuple because TUPLE is immutable. 
+Another is arguments in functions are arbritray in terms of name as long as the start is placed. Example *spam
+--> **kwargs allows to set the arbritray number of arguments that is form of DICTIONARY. 
+--> Positional arguments are set in the function parameters
+--> Example
+def myfunc(*args):
+    print(args) #tuple
+    return sum(args) * 0.5
+    
+
+def myfunc(**kwargs):
+    print(kwargs)
+    if 'fruit' in kwargs:
+        print('My fruit of choice is {}'.format(kwargs['fruit']))
+    else:
+        print('I did not find and fruit here')
+
+
+Lambda Expressions Map and Filter
+--> Lambda functions are quickly to create anonymous function in Python. Its anonymous because 
+ the functio is using one time
+    Example:
+    list(map(lambda num: num ** 2, mynums))
+    list(filter(lambda num: num % 2 == 0, mynum))
+
+--> Map function - built in function in Python (<function name>, values)
+    Example:
+    def square(num):
+        return num ** 2
+
+    my_nums = [1, 2,3,4,5]
+
+    for item in map(square, my_nums):
+        print(item)
+    list(map(square, my_nums))
+
+--> Filter function - built in function in Python similar to map but difference is filtering data
+    Example:
+    def check_even(num):
+        return num % 2 == 0
+    mynum = [1,2,3,4,5,6]
+    list(filter(check_even, mynum))
+
+LEGB RULE
+Local
+Enclosing
+Global
+Built in
+
+#Global
+name = 'This is a global string'
+
+def greet():
+    
+    #Enclosing
+
+    name = 'Sammy'  
+
+    def hello():
+        #Local
+        name = "I am local"
+
+        print("hello"+name)
+    
+    hello()
+greet()
+
+
+--> Using global keyword inside local function is the that variable is not change or constant value.
+--> Because its dangerous if that variable is changing overtime.

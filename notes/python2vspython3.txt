@@ -1,0 +1,28 @@
+Py 2 vs Py 3
+1.) Choosing between Py 2 and Py 3 used to be very difficult decision for new comers to the Python programming language.
+2.) Many companies still had legacy system on Python 2 code that is need to be maintained.
+3.) Python 2 will stop security updates in year 2020.
+4.) Both versions of Python were similar enough and it was easy to learn both simultaneously
+5.) Now 99% of Python package are has been updated to Python 3.
+6.) Recommended to use now is Python 3.
+7.) Python 3 is the future of Python.
+
+Python Overview
+Developed by Guido van Rossum in 1991
+Advantage on using Python
+1.) Developers can learn it quickly
+2.) Typically involves less code
+3.) Syntax is easier to read
+4.) Utilized by every major company
+5.) Huge amount of additional open source libraries.
+
+
+3 main types of python environments
+1.) Text editors
+    - Sublime, Atom, VSCode
+2.) Full IDE
+Dev env designed specifically for Python
+    - Pycharm, Spyder
+3.) Notebook
+    - Good for learning
+    - See I/O next to each other

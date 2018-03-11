@@ -1,0 +1,20 @@
+The three Boolean operators are "and, or, not"
+Boolean operators read from left to right execution
+The truth table
+(and truth table) one condition is false its already false
+T T = T
+F T = F
+T F = F
+F F = F
+
+(or truth table) either one of the condition is true its really true
+T T = T
+F T = T
+T F = T
+F F = F
+
+(not truth table) basically not ask for the opposite boolean
+not T = F
+not F = T
+
+boolean operators are use on logical operator such chaining comparison operator

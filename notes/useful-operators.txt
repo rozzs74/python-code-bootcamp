@@ -1,0 +1,115 @@
+Python common built in functions are
+1.) range(start, stop, step)
+    --> By default range has a single parameter which refer to "stop"
+    example:
+        for num in range(0, 11, 2):
+            print(num)
+        
+2.) list()
+    --> Create a list by passing value as argument in the function
+    example:
+        list(range(0, 11, 2)) #[0,2,4,5,8,10]
+3.) enumerate()
+    --> takes an enumerable values and return its index and value with the form of tuples so basically we can use tuple unpacking.
+    example:
+        word = 'abcde'
+        for index,letter in enumerate(word):
+            print(letter)
+            print(index)
+4.) zip() 
+    --> Opposite of enumerate() must accept two or more parameters as zip so that it will return tuple and implement tuple unpacking.
+    --> Zip will only base on the shortest length of items in a particular data type.
+    example:
+        mylist1 = [1,2,3]
+        mylist2 = ['a','b','c'] 
+
+        zip(mylist1, mylist2) # memory location is log
+
+        for index,letter in zip(mylist1, mylist2):
+            print(index) # 1,2,3
+            print(letter) # a b c
+
+        list(zip(mylist1, mylist2)) # list of tuples
+5.) in as keyword
+    --> accepts two values the value you want to look for or refer to be search and the second one is the source
+    --> It'll return boolean
+    --> This is useful when searching a value in list!
+    --> Work in string
+    --> Work in dictionaries like keys
+    --> Work in iterables item
+    'x' in [1,2,3] # False
+    'x' in ['x', 'y', 'z'] # True
+    'a' in 'Hello world' # True
+    'mykey' in {'mykey': 345} # True
+    d = {'mykey': 345}
+    345 in d.keys() # False
+    345 in d.values() # True
+6.) min() and max() 
+    --> We can use this function in list to get the minimum integer value of a list and max value in the list
+    --> Only works with number values on the list   
+    example
+        mylist = [10,20,30,40,1000000,100]
+        min(mylist) # 10
+        max(mylist) # 1000000
+7.) Using random library or module
+    --> import random
+    --> from random import <function you want to call>
+    example
+        from random import shuffle
+        mylist = [0,51,551,2,3]
+        shuffle(mylist)
+        print(mylist) # Output should be randomed the items inside list.
+8.) input() 
+    ---> It accepts input value from the keyboard or user
+    --> By default input returned string value
+    example
+        name = input('What is your name?')
+        # What is your name? Royce
+        name # Royce
+9.) type()
+    --> Get the data type of particular value
+    --> return <class 'str'>
+    example
+        name = 'Royce'
+        type(name) # <class 'str'>
+10.) int()
+    --> Converts value into number
+    example
+        a = '10'
+        int(a) # 10
+11.) float()
+    --> Converts value into floating decimal number
+    example
+        f = 10
+        float(a) #10.0
+12.) str()
+    --> Converts value into sring
+    example
+        f=10
+        str(f) # '10'
+13.) help()
+    --> Used to evaluate a particular or describing what it does
+    --> Returns docs string
+
+14.) lower()
+      --> returns the lower case of string
+15.) capitalize()
+      --> returns the capitalize case of 
+
+16.) upper()
+      --> returns the upper case of string
+17.) join()
+      --> return sting by joining another value
+18.) sum(<list>)
+      --> return the total value of list
+19.) string.strip() 
+      --> Remove leading and ending spaces of string
+20.) string.replace()
+      --> Replace a character in string
+21.) string.split()
+      --> Create list of string
+
+22.) del <entity>
+    --> deletes variable in the computer memory
+23.) string.title()
+    --> capitalize each word on the string

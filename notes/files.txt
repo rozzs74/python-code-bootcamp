@@ -1,0 +1,12 @@
+Reading, writing, appending modes
+mode='r' is read only
+mode='w' is write only (will overwrite files or create new)
+mode='a' is append onlt (will add on to files)
+mode ='r+' is reading and writing
+mode = 'w+' + is writing and reading (Overwrites existing files or creats new file);
+
+Syntax 
+## another way of opening reading and closing file
+with open('myfile.txt' , <mode>) as my_new_file:
+contents = my_new_file.read()
+print(contents)

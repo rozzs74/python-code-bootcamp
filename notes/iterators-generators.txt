@@ -1,0 +1,76 @@
+---> Generator functions allow us to write a function that can send back a value
+and then later resume to pick up where it left off.
+---> This type of function is a generator in Python, allowing us to generate a
+sequence of values over time
+---> The main difference n syntax will be the use of a "yield" statement
+---> Generator functions will automatically suspend and resume their execution and state around
+the last point of value generation
+---> The advantage is that instead of having a compute an entire series of values up front
+the generator computes one value waits until the next value is called for.
+---> On using generator in Python logically iterable items are allocating space in the 
+memory but if you implement generator by using yield. It will generate values as you need them and those
+values are already allocated in memory when you generate or need it.
+---> yield is a keyword that is used like return except the function will return a generator.
+---> Using generator and yield could have a memory "efficient"
+---> HAHA
+Base on learning, experiment, observation: What is good in Python was on using generators and yield could have a memory "efficient" It only generate when you need them. 
+The reason is everything you do such a normal way it actually allocate resources to the memory.
+Example
+
+def create_cubes(n):
+    for x in range(n):
+        yield x**3
+
+create_cubes(10) # Created generators in a memory 
+
+Example 2 
+
+Not using generator normal function
+
+def gen_fibo(n):
+    output = []
+
+    for i in range(n):
+        output.append(i)
+        a, b = b, a + b
+    return output
+
+---> This approach is normal / standard way it allocates space on the memory returning the list 
+of the output so basically this way is less memory efficient because you are holding
+everythin in the list memory.
+
+
+Using generator and yield
+
+def gen_fibo(n):
+    for i in range(n):
+        yield a
+        a, b = b, a + b
+
+gen_fibo(10) # Create a generated items on the memory
+
+for x in gen_fibo(10):
+    list(x)
+    
+---> This approach is more efficient memory than our last example because you are yielding it as you
+need them. This is good especially if you expect technically a large number off iteration items
+
+---> In generators and  yield the question here is "What you need I'll give it you"
+
+Example
+
+def simple_gen():
+    for x in range(3):
+        yield x
+
+for x in simple_gen():
+    print(x) #  0, 1, 2
+ 
+g = simple_gen() # generator object with memory allocation
+
+print(next(g)) # 0
+print(nextt(g)) # 1
+print(next(g)) # 2
+
+StopIteration is the error if you no iterator found on the generated value
+ 

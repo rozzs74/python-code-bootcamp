@@ -1,0 +1,41 @@
+---> Advance Python concept
+---> Decorators - allows you to 'decorate' a function
+---> Image you created a function like:
+
+    def simple_func():
+        # Do simple stuff
+        return something
+
+---> In function case you have two options
+1.) Add that extra code (functionality) to your old function
+2.) Create a brand new function that contains the old code, and then add new
+code to that
+--> Decorators implemenation is pretty abstract in practice with Python syntax, so we will go
+through the steps of manually building out a decorator ourselves, to show what the @ operator is doing
+behind the scenes
+
+
+example
+
+def new_decorator(original_func):
+    
+    def wrap_func():
+        print("Some extra code, before the original function")
+        
+        original_func()
+        
+        print("Some extra code, after the original function")
+    
+    return wrap_func
+        
+ func_needs_decorator():
+    print("I want to be decorated!!")
+
+
+@new_decorator
+def func_needs_decorator():
+    print("I want to be decorated!!")
+
+Some extra code, before the original function
+I want to be decorated!!
+Some extra code, after the original function

@@ -1,0 +1,25 @@
+if, elif,else, while, for, break, continue, pass
+--> Control flow syntax makes use of colons and indentation white space
+--> The indentation system is crucial to Python and is waht sets it apart from
+other programming language.
+
+if :
+elif:
+else:
+for:
+while:
+loops keywords
+break = breaks out of the current closest enclosing loop
+continue = goes to the top of the closest enclosing loop
+pass = does nothing at all
+
+for loop syntax
+my_iterable = [1,2,3]
+for item_name in my_iterable:
+    print(item_name)
+while loops will continue to execute a block of code while the statement condition remains True
+
+while some_boolean_condition:
+    #do here
+else:
+    #do here

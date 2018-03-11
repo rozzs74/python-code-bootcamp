@@ -1,0 +1,32 @@
+---> As you begin to expand to larget multi-file projects it becomes important to have tests in place
+---> This is way as you make changes or update your code, you can run your test files to make sure previous code still runs as
+expected
+---> There are several testing tools, we wil focus on two
+1.) Pylint - this is library that looks at your code and reports back possible issues
+2.) unittest - This is built- in library will allow to test your own programs and check you are getting desired outputs. 
+
+To install Pylint
+1.) Go to terminal and execute the command
+--> pip install pylint
+2.) Dont aim 10 / 10 on pylint much prioritise human readable instead of machine readable
+
+The main goal of unit testing is to test the code
+Example:
+
+import unittest # Step 1 import unittest libary
+import cap      # Step 2 import script that is you want to test
+ 
+class TestCap(unittest.TestCase): # Step 3 Create your test case using class and inherit test case class
+    
+    def test_one_word(self):
+        text = 'python'
+        result = cap.cap_text(text)
+        self.assertEqual(result, 'Python')
+    
+    def test_multiple_words(self):
+        text = 'monty python'
+        result = cap.cap_text(text)
+        self.assertEqual(result, 'Monty Python')
+
+if __name__ == '__main__':
+    unittest.main()

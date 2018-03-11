@@ -1,0 +1,72 @@
+---> PyPI is a repository for open source third-party Python Packages
+---> It's similar to RubyGems in the Ruby world, PHP's packagist, CPAN for Perl and
+NPM for Node.js
+---> So far we've really only used libraries that come internally with Python or we can call as
+standard / built-in library in Python
+---> Basically there are many other libraries available that people have open-sourced and shared on
+PyPi.
+---> We can use pip install at the command line to install the packages
+---> There are packages already created for almost any use case you can think of!
+---> A quick google search will usually help you discover a link to the PyPi page for the package
+or for the package documentation
+
+pip install <package you want install>
+pip install package
+pip install colorama
+
+Writing your own packages
+---> Now that we undestand how to install external packages, lets explore how to create 
+our own modules / packages.
+---> Modules are just .py scripts that you can call in another .py scripts
+---> Packages are a collection of modules.
+---> lets create some packages
+
+
+Other
+---> An often confusing part of Python is a mysterious line of code:
+if __name__ == "__main__":  
+    # Being run directly
+else:
+    # This module was imported and using by another pyscript
+---> That is all about on checking if a module is imported to another pyscript or being
+run the module directly
+
+Example1:
+# one.py
+
+def func():
+    print("FUNC() IN ONE.PY")
+print("TOP LEVEL IN ONE.PY")
+
+
+if __name__ == "__main__":
+    print("ONE.PY is being run directly!")
+else:
+    print('ONE.PY has been imported!')
+
+#two.py
+import one
+print("TOP LEVEL IN TWO.PY")
+one.func()
+if __name__ == "__main__":
+    print("TWO.PY is being run directly!")
+else:
+    print("TWO.PY has been imported!!")
+
+
+Example 2 
+
+def func():
+    pass
+
+def func2():
+    pass
+
+def func3():
+    pass
+
+if __name__ == "__main__":
+    # RUN THE SCRIPT
+    func()
+    func2()
+    func3()

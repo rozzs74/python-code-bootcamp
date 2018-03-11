@@ -1,0 +1,36 @@
+--> Dictionaries are unordered mappings for storing objects. Previously we saw how lists store objects in an ordered sequence,
+dictionaries use a key-value pairing instead.
+--> This key-valye pair allows users to quickly grab objects without needing to know a index location.
+--> Dictionaries use curly braces and colons to signify the keys and their associated values. {'key1': 'value1'};
+--> So when to choose list and when to choose dictionary?
+--> Dictionaries can hold different object types
+--> Dictinaries are mutable as well
+-->  {'key1': 'value1'}
+--> Ans: Dictionaries: PROS: Objects retrieved by key name. CONS:Unordered and can not be sorted. 
+Lists: CONS: Objects retrieved by location. PROS: Ordered sequence can be indexed or sliced.
+--> Dictionaries FAQ
+1.) Do dictionaries keep an order? How do I print the values of the dictionary order?
+Ans: Dictionaries are mappings and do not retain order! if you do want the capabilities of a dictionary
+but you would like ordering as well, check out the "orderddict" -->https://docs.python.org/2/library/collections.html#collections.OrderedDict
+
+
+Built in functions
+values() - return dictionaries values
+items() - return dictionaries values and items using a tuple.
+
+Iterating dictionaries
+1.) By default when looping to dictionary it will log the keys.
+2.) using .items() then implement dictionaries unpacking like this.
+3.) using .values() to loop the values itself from dictionary
+
+d = {'k1': 1, 'k2': 2, 'k3':3}
+
+for item in d:
+    print(d) #default
+
+for a,b in d.items():
+    print(a) # loop keys
+    print(b) # loop values
+
+for item in d.values():
+    print(item) # loop values
