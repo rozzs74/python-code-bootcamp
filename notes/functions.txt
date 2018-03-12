@@ -38,7 +38,7 @@ def myfunc(**kwargs):
 
 Lambda Expressions Map and Filter
 --> Lambda functions are quickly to create anonymous function in Python. Its anonymous because 
- the functio is using one time
+ the function is using it one time
     Example:
     list(map(lambda num: num ** 2, mynums))
     list(filter(lambda num: num % 2 == 0, mynum))

@@ -1,0 +1,30 @@
+---> Collections module
+1.) Counter - counts the hashable objects on items
+
+example:
+from collections import Counter 
+
+2.) defaultdict 
+from collections import defaultdict
+
+3.) ordered dictionary
+from collections import   OrderedDict
+better to use this module for checking the equality order sequence of dictionaries
+
+4.) namedtuple
+from collections import namedtuple
+
+More of collections modules
+https://docs.python.org/3.6/library/collections.html
+
+
+Dealing with date time on the code
+import datetime
+time --> datetime.time
+date --> datetime.date
+
+
+Python debugger
+import pdb
+
+pdb.set_trace() = to open python debugger.
