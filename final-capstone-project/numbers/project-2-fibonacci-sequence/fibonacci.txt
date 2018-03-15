@@ -1,0 +1,35 @@
+A.History
+His real name was Leonardo Pisano Bogollo, and he lived between 1170 and 1250 in Italy.
+"Fibonacci" was his nickname, which roughly means "Son of Bonacci".
+Fibonacci Day is November 23rd, as it has the digits "1, 1, 2, 3" which is part of the sequence. So next Nov 23 let everyone know!
+
+B.The Fibonacci Sequence is the series of numbers:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+The next number is found by adding up the two numbers before it.
+    The 2 is found by adding the two numbers before it (1+1)
+    The 3 is found by adding the two numbers before it (1+2),
+    And the 5 is (2+3),
+    and so on!
+
+The Fibonacci Sequence can be written as a "Rule" (see Sequences and Series).
+First, the terms are numbered from 0 onwards like this:
+n = 	0 	1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	...
+xn = 	0 	1 	1 	2 	3 	5 	8 	13 	21 	34 	55 	89 	144 	233 	377 	...
+
+So term number 6 is called x6 (which equals 8).
+
+So we can write the rule:
+
+The Rule is xn = xn-1 + xn-2
+
+where:
+
+    xn is term number "n"
+    xn-1 is the previous term (n-1)
+    xn-2 is the term before that (n-2)
+
+Example: term 9 is calculated like this:
+x9= x9-1 + x9-2
+ = x8 + x7
+ = 21 + 13
+ = 34

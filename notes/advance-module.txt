@@ -19,12 +19,35 @@ https://docs.python.org/3.6/library/collections.html
 
 
 Dealing with date time on the code
-import datetime
+5.) import datetime
 time --> datetime.time
 date --> datetime.date
 
 
 Python debugger
-import pdb
+6.) import pdb
 
 pdb.set_trace() = to open python debugger.
+
+Timing your code
+7.) import timeit
+timeit.timeit("<string expression>", number=1000)
+
+example:
+# Looping sting
+timeit.timeit(' "-".join(str(n) for n in range(99))', number=10000) # time after doing this slower
+
+timeit.timeit('"-".join([str(n) for n in range(100)])', number=10000) # time after doing this second faster
+
+timeit.timeit('"-"'.join(map(str, range(100))) # time after doing this faster 
+
+---> Heads up that timeit is always depending on computer speed 
+
+built in function on jupyter notebook %timeit <Expressions>
+
+8.) Regular expression
+---> Regular expressions are text matching patterns
+import re
+re.split()
+re.search()
+re.findall('match', 'How match') = # ['match']
