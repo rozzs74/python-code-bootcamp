@@ -9,11 +9,13 @@
 def front_back(str):
     if len(str) <= 1:
         return str
-
+    first = str[0]
     mid = str[1:len(str) - 1]  # can be written as str[1:-1]
-
-    # last + mid + first
-    return str[len(str) - 1] + mid + str[0]
+    mid = str[1: -1]
+    last = str[len(str) - 1] 
+    final = last + mid + first
+    return final
 
 
 print(front_back('code'))
+print(front_back('royce'))

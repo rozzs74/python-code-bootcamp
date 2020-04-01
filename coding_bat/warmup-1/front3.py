@@ -21,4 +21,6 @@ def front32(str):
   if len(str) < front_end:
     front_end = len(str)
   front = str[:front_end]
-  return front + front + front )
+  return front + front + front 
+
+print(front32("Java"))

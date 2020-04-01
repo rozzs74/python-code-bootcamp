@@ -5,12 +5,13 @@
 # diff21(19) → 2
 # diff21(10) → 11
 # diff21(21) → 0
-
+# diff21(43) → 484
 
 
 def diff21(number):
     difference = abs(21 - number)
     if number > 21:
-        difference *2
+        difference = difference ** 2
     return difference
-print(diff21(21))
+print(f"The difference is not doubled: {diff21(14)}")
+print(f"The difference is doubled: {diff21(43)}")

@@ -9,15 +9,16 @@
 # Solution 1
 def missing_char1(word, index):
     word_list = list(word)
-
     if index > len(word_list):
         return f"Oops index range error"
     else:
         word_list.pop(index)
         return "".join(word_list)
 # Solution 2
+print(missing_char1('kitten', 5))
+
 def missing_char2(str, n):
   front = str[:n]   # up to but not including n
   back = str[n+1:]  # n+1 through end of string
   return front + back
-print(missing_char2('kitten', 1))
+print(missing_char2('kitten', 5))

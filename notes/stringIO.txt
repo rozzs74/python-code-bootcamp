@@ -1,0 +1,14 @@
+StringIO
+	---> The StringIO module implements an in-memory file like object.
+	This object can then be used as a input or output most functions that would expect a standard
+	file object.
+
+	--->
+	import StringIO
+
+	message = 'This is just normal string'
+	f = StringIO.StringIO(message)
+	f.read()
+	f.write("")
+	f.seek(0)
+	

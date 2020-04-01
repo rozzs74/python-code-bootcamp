@@ -3,8 +3,8 @@ Slicing allows you to grab a subsection of multiple characters a slice of the st
 string is IMMUTABLE
 This has the following sysntax
 [start:stop:step]
-start - is a numerical index for the slice
-stop - is the index you will go up to but not include
+start - is a numerical index for the slice (include)
+stop - is the index you will go up to but not include  (exclude)
 step - is the size of the jump you take
 
 STRINGS ARE IMMUTABLE In Python
