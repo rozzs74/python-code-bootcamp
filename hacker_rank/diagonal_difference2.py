@@ -1,6 +1,5 @@
 def diagonalDifference(items):
 	items_length = len(items)
-	print(items_length)
 	# total_stepper = items_length - 1
 	# modulo = items_length % 2
 	# column = 0
