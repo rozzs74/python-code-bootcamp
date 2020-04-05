@@ -15,7 +15,7 @@ def timeConversion(time):
 	print(f"time lists length {time_lists_length}")
 	i = 0
 	while time_lists_length > 1:
-		print(time_lists[i])
+		print(time_lists[i])		
 		i = i + 1
 		if i == time_lists_length:
 			break;
