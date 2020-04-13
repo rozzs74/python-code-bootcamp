@@ -1,4 +1,4 @@
-
+# https://www.hackerrank.com/challenges/apple-and-orange/problem
 def countApplesAndOranges(s, t, a, b, apples, oranges):
     apple_length = len(apples)
     oranges_length = len(oranges)
