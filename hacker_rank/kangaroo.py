@@ -11,8 +11,16 @@ def kangaroo(x1, v1, x2, v2):
     
     print(f"k1_jump_result {k1_jump_result}")
     print(f"k2_jump_result {k2_jump_result}")
-    return 1
+    
+    i = 0
 
+    while True:
+        print(f"Both kangaroo is jumping")
+        i += 1
+        
+        if i == 10:
+            print(f"done")
+            break
 
 
 result = kangaroo(0, 3, 4, 2)
