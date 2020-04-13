@@ -2,25 +2,27 @@
 
 
 def kangaroo(x1, v1, x2, v2):
-    print(f"x1 {x1}")
-    print(f"v1 {v1}")
-    print(f"x2 {x2}")
-    print(f"v2 {v2}")
-    k1_jump_result = x1 + v1
-    k2_jump_result = x2 + v2
-    
-    print(f"k1_jump_result {k1_jump_result}")
-    print(f"k2_jump_result {k2_jump_result}")
-    
+    k1_jump_result = x1
+    k2_jump_result = x2
     i = 0
+    if x2 > x1 or v2 > v1:
+        return "NO"
+    else :
+        while True:
+            x1 = x1 + v1
+            x2 = x2 + v2
+            i += 1
+            if x1 == x2:
+                return "YES"
 
-    while True:
-        print(f"Both kangaroo is jumping")
-        i += 1
-        
-        if i == 10:
-            print(f"done")
-            break
+
+# result = kangaroo(0, 3, 4, 2)
+# result = kangaroo(2, 1, 1, 2)
+# result = kangaroo(0, 2, 5, 3)
+result = kangaroo(21, 6, 47, 3)
+
+# 21 6 47 3
+print(result)
+# 0 2 5 3
 
 
-result = kangaroo(0, 3, 4, 2)
