@@ -6,9 +6,13 @@ from collections import Counter
 def sockMerchant(n, arr):
     items = Counter(arr)
     to_search = 2
-    return sum(item//to_search for item in items.values())
+    total = []
+    for item in items.values():
+        pair = item // to_search
+        if pair:
+            total.append(pair)
+    return sum(total)
 
-# search 
-# remove
+    
 a = sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20])       
 print(a)
