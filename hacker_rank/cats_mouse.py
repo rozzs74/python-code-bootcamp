@@ -1,5 +1,4 @@
-
-
+#https://www.hackerrank.com/challenges/cats-and-a-mouse/problem?h_r=next-challenge&h_v=zen
 # x + n = z
 # n + y = z
 # if both n is equal in both equation the mouse escape
