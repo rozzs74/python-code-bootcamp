@@ -3,6 +3,7 @@
 # x + n = z
 # n + y = z
 # if both n is equal in both equation the mouse escape
+# if eq 1 is higher than eq 2 ans  is eq1 otherwise eq2
 # Where n is must be an absolute value
 def catAndMouse(x, y, z):
     catA = abs(z - x)
