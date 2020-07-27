@@ -52,6 +52,10 @@
 # print(a)
 # 6 5 4 2 1
 
+
+# A good way to solve the problem is to store distinct values of the scores with O(N) complexity. For example, Test Case scores are: 100 100 50 40 40 20 10
+# You only need to store: 100 50 40 20 10
+# Then use a simple binary search catered to a descending list which returns the corresponding index.
 def climbingLeaderBoard(scores, alice_scores):
     leaderboard = sorted(set(scores), reverse = True)
     l = len(leaderboard)
