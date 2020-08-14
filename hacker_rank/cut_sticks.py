@@ -7,7 +7,7 @@ def cutTheSticks(arr):
     return results
 
 a = cutTheSticks([5, 4, 4, 2, 2, 8])
-
+# https://www.hackerrank.com/challenges/cut-the-sticks/problem
 # 5 4 4 2 2 8  
 
 # 2 - 8 = 6 *
