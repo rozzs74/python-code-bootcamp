@@ -1,31 +1,10 @@
-
-
-
 def cutTheSticks(arr):
-    new_arr = sorted(arr)
-    arr_length = len(new_arr)
-    count = 0
-    l = min(arr)
-    h = max(arr)
-    i = 0
-
-    while i <= arr_length:
-        col = []
-        el = new_arr[i]
-        if i == 0:
-            print(f"a = {new_arr[i:arr_length]} el={el}")
-            continue
-        # des = new_arr[i:arr_length]
-        # for j in des:
-        #     diff = abs(el - j)
-        #     if diff:
-        #         col.append(diff)
-        #     print(f"d={abs(el-j)} c={col}")
-
-        i += 1
-        if i == arr_length:
-            break
-
+    results=[]
+    while len(arr)>=1:
+        results.append(len(arr))
+        minlen=min(arr)
+        arr=[i for i in arr if i>minlen]
+    return results
 
 a = cutTheSticks([5, 4, 4, 2, 2, 8])
 
